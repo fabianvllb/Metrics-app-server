@@ -7,7 +7,7 @@
     "start": "NODE_ENV=prod node src/server.js",
     "dev": "NODE_ENV=dev tsx watch src/server.ts",
     "build": "tsc",
-    "postinstall": "prisma generate"
+    "postinstall": "npx prisma generate"
   },
   "keywords": [],
   "author": "Fabián Villalobos",
