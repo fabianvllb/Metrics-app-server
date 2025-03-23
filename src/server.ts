@@ -9,7 +9,7 @@ app.use(
   cors({
     origin: "*",
     methods: ["GET", "POST"],
-    allowedHeaders: ["Content-Type"],
+    allowedHeaders: ["Content-Type", "ngrok-skip-browser-warning"],
     credentials: false,
   })
 );
