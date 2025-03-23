@@ -1,0 +1,15 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Metrics {
+  id         Int      @id @default(autoincrement())
+  sales_rep  String
+  amount     Float
+  timestamp  DateTime @default(now()) @db.Timestamptz
+}
