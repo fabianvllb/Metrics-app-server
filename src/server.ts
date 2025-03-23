@@ -7,9 +7,10 @@ const app = express();
 /* app.use(cors()); */
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://fmetrics-app.netlify.app"],
+    origin: "*",
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type"],
+    credentials: false,
   })
 );
 app.use(express.json());
